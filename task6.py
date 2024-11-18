@@ -3,3 +3,11 @@
 # максимальным и минимальным значением дробной части элементов.
 #  Пример:
 # [1.1, 1.2, 3.1, 5, 10.01] => 0.19
+
+lst = [1.1, 1.2, 3.1, 5, 10.01]
+frac_lst = []
+for i in lst:
+    if i == int(i):
+        continue
+    frac_lst.append(i - int(i))
+print(round(max(frac_lst)-min(frac_lst), 2))
